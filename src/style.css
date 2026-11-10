@@ -347,3 +347,17 @@ html,body,#app{background:var(--paper);color:var(--ink);overflow-x:clip}body{fon
 #steps .steps-cta{text-align:left;margin-top:24px}
 #steps .steps-cta .button{background:var(--yellow-500)!important;color:#fff!important}
 @media(max-width:680px){#steps .steps article,#steps .steps article+article{grid-template-columns:28px minmax(0,1fr);gap:14px;padding:18px 0;border-top:1px solid rgba(32,37,34,.2)}#steps .steps article:nth-child(n+3){border-top:1px solid rgba(32,37,34,.2)}#steps .steps h3{font-size:18px}}
+/* Made with Childbook: keep the supplied six-card format and brand color */
+.books{background:#e6f7f8;color:#203b55}
+.books .section-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:7%;align-items:end}
+.books .section-heading>p{max-width:700px;font-size:18px;line-height:1.65;color:#596f83}
+.book-copy-break{display:block}
+.book-card{background:#f8ffff;border:0;border-radius:18px;box-shadow:0 5px #b7dfe1}
+.book-image{aspect-ratio:1.34/1;background:#dff3f4}
+.book-copy{gap:11px;padding:20px}
+.book-category{color:#257e86;font-size:12px;letter-spacing:.9px}
+.book-copy h3{color:#203b55;font-size:20px}
+.book-link{display:inline-flex;margin-top:auto;padding-top:4px;color:#257e86;font-size:16px;font-weight:700;text-decoration:none}
+.book-link:hover{color:#9A600E}
+@media(max-width:900px){.books .section-heading{grid-template-columns:1fr;gap:16px}.books .section-heading>p{max-width:720px}}
+@media(max-width:680px){.book-copy-break{display:none}.books .section-heading>p{font-size:17px;line-height:1.6}.book-card{box-shadow:0 4px #b7dfe1}}
