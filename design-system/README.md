@@ -19,20 +19,30 @@ El tamaño base de botones, navegación, cuerpo, listas, precios secundarios y f
 | Token | Valor | Uso |
 |---|---|---|
 | Coral Childbook | `#F46D56` | Acentos y estados de énfasis |
-| Yellow 500 | `#996600` | Acción primaria con texto blanco |
+| Yellow 50 | `#FDFBE9` | Fondo claro del CTA |
+| Yellow 100 | `#FBF6C6` | Transición clara del CTA |
+| Yellow 200 | `#F8EB90` | Transición del CTA |
+| Yellow 300 | `#F4D950` | Acento del CTA |
+| Yellow 400 | `#EFC522` | Acento luminoso |
+| Yellow 500 | `#DFAD13` | Botón primario con texto blanco |
+| Yellow 600 | `#C0860E` | Hover del botón primario |
+| Yellow 700 | `#9A600E` | Tono de énfasis |
+| Yellow 800 | `#7F4C14` | Tono profundo de énfasis |
+| Yellow 900 | `#6C3F17` | Tono profundo |
+| Yellow 950 | `#3F2009` | Tono más oscuro de la escala |
 | Story ink | `#202522` | Texto y superficies oscuras |
 | Paper | `#F5F5F2` | Fondo general |
 | Soft surface | `#E8E8E5` | Contenedores suaves del header y la interfaz |
 | Night sky | `#10213F` | Overlay y texto/fondo del hero nocturno |
 | White | `#FFFFFF` | Texto sobre imágenes oscuras |
 
-El fondo fotográfico del hero lleva una capa oscura para mantener contraste. El titular y la etiqueta del hero son blancos. Todos los CTA tienen texto blanco; Yellow 500 (`#996600`) mantiene contraste legible sobre el botón primario.
+El fondo fotográfico del hero lleva una capa oscura para mantener contraste. El titular y la etiqueta del hero son blancos. Todos los botones CTA tienen texto blanco. El CTA de cierre usa un degradado de Yellow 50 a Yellow 500 y un motivo radial discreto con tonos Yellow 300–950; los botones primarios usan Yellow 500 (`#DFAD13`).
 
 ## Atomic design
 
 ### Átomos
 
-- **Botón primario**: fondo Yellow 500 (`#996600`), texto blanco, 16 px semibold, altura mínima 48 px, esquinas redondeadas.
+- **Botón primario**: fondo Yellow 500 (`#DFAD13`), texto blanco, 16 px semibold, altura mínima 48 px, esquinas redondeadas.
 - **Botón secundario**: fondo gris carbón (`#565851`), texto blanco, 16 px semibold, sin subrayado ni icono decorativo.
 - **Botón oscuro**: fondo Story ink, texto blanco; se usa en superficies claras cuando se requiere una acción principal de alto contraste.
 - **Tipografía de control**: 16 px; enlaces de navegación también usan 16 px.
