@@ -375,3 +375,5 @@ html,body,#app{background:var(--paper);color:var(--ink);overflow-x:clip}body{fon
 .showcase .image-caption{background:linear-gradient(transparent,rgba(16,33,63,.78))}
 .showcase .preview-foot{padding-top:22px}
 @media(max-width:680px){.showcase .preview{padding:16px;border-radius:16px}}
+/* Keep the yellow CTA palette; soften the shape with an internal gradient */
+.closing:before{background:linear-gradient(135deg,rgba(248,235,144,.08) 0%,rgba(244,217,80,.18) 32%,rgba(239,197,34,.26) 58%,rgba(223,173,19,.18) 78%,rgba(192,134,14,.08) 100%)!important;opacity:1!important;filter:blur(2px)}
