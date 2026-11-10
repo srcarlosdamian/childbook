@@ -335,3 +335,15 @@ html,body,#app{background:var(--paper);color:var(--ink);overflow-x:clip}body{fon
 .hero-actions .button{width:max-content;white-space:nowrap}
 @media(max-width:900px){.hero.wrap{grid-template-columns:minmax(0,1fr) minmax(0,150px);column-gap:20px;padding-top:135px}.hero-copy{grid-column:1;max-width:720px;padding:24px 0 52px}.hero h1{font-size:clamp(40px,6vw,58px);max-width:720px}.hero-lede{max-width:620px}}
 @media(max-width:680px){.hero.wrap{grid-template-columns:minmax(0,1fr);padding-top:124px}.hero-copy{grid-column:1;grid-row:1;padding:18px 4px 42px}.hero h1{font-size:clamp(38px,9.4vw,54px);letter-spacing:-1.8px}.hero-actions{flex-wrap:wrap}.hero-actions .button{width:max-content}}
+/* From one idea: icon beside its copy in calm, branded rows */
+#steps .steps{display:grid;grid-template-columns:1fr;border:0;gap:0}
+#steps .steps article,#steps .steps article+article{display:grid;grid-template-columns:32px minmax(0,1fr);gap:18px;align-items:start;padding:24px 0;border:0;border-top:1px solid rgba(32,37,34,.2)}
+#steps .steps article:last-child{border-bottom:1px solid rgba(32,37,34,.2)}
+#steps .step-head{margin:0;display:block;grid-column:1;grid-row:1}
+#steps .step-icon{width:24px;height:24px;color:#258f94}
+#steps .step-copy{grid-column:2;grid-row:1}
+#steps .steps h3{font-size:20px;margin:0 0 6px}
+#steps .steps p{font-size:16px;line-height:1.5;margin:0}
+#steps .steps-cta{text-align:left;margin-top:24px}
+#steps .steps-cta .button{background:var(--yellow-500)!important;color:#fff!important}
+@media(max-width:680px){#steps .steps article,#steps .steps article+article{grid-template-columns:28px minmax(0,1fr);gap:14px;padding:18px 0;border-top:1px solid rgba(32,37,34,.2)}#steps .steps article:nth-child(n+3){border-top:1px solid rgba(32,37,34,.2)}#steps .steps h3{font-size:18px}}
