@@ -394,3 +394,11 @@ html,body,#app{background:var(--paper);color:var(--ink);overflow-x:clip}body{fon
 #pricing .section-heading>p{align-self:start;margin:30px 0 0;max-width:520px}
 @media(max-width:900px){#pricing .section-heading{grid-template-columns:minmax(0,1fr) minmax(0,400px);column-gap:5%}}
 @media(max-width:680px){#pricing .section-heading{grid-template-columns:1fr;gap:16px}#pricing .section-heading>p{margin:0}}
+.books{background:#F5F5F2;color:#202522}
+.book-card{background:#FDFBE9;border:0;box-shadow:none;border-radius:14px}
+.book-image{background:#E8E8E5}
+.book-category{color:#9A600E}
+.book-copy h3{color:#202522}
+.book-link{color:#565851}
+.book-link:hover{color:#3F2009}
+@media(max-width:680px){.book-card{box-shadow:none}}
