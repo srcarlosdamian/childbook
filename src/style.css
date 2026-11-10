@@ -390,3 +390,7 @@ html,body,#app{background:var(--paper);color:var(--ink);overflow-x:clip}body{fon
 #audiences .audience-link{display:inline-flex;margin-top:8px;font-size:16px;font-weight:600;color:#565851;text-decoration:none;border:0}
 #audiences .audience-link:hover{color:#202522}
 @media(max-width:900px){#audiences .section-heading>p{font-size:19px}}
+#pricing .section-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,520px);column-gap:7%;align-items:start}
+#pricing .section-heading>p{align-self:start;margin:30px 0 0;max-width:520px}
+@media(max-width:900px){#pricing .section-heading{grid-template-columns:minmax(0,1fr) minmax(0,400px);column-gap:5%}}
+@media(max-width:680px){#pricing .section-heading{grid-template-columns:1fr;gap:16px}#pricing .section-heading>p{margin:0}}
