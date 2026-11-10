@@ -380,3 +380,7 @@ html,body,#app{background:var(--paper);color:var(--ink);overflow-x:clip}body{fon
 .nav-links a{display:inline-flex;align-items:center;margin:-4px -7px;padding:4px 7px;border-radius:6px;transition:none}
 .nav-links a:hover{background:#d8d8d1;color:#202522}
 .closing{background:#F4D950!important}
+.showcase{background:#F5F5F2}
+.showcase .section-heading .eyebrow,.showcase .section-heading h2{color:#203b55}
+.showcase .section-heading>p{color:#596f83;opacity:1}
+.showcase .preview{background:#fff;border-radius:22px}
