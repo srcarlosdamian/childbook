@@ -379,3 +379,4 @@ html,body,#app{background:var(--paper);color:var(--ink);overflow-x:clip}body{fon
 .closing:before{background:linear-gradient(135deg,rgba(248,235,144,.08) 0%,rgba(244,217,80,.18) 32%,rgba(239,197,34,.26) 58%,rgba(223,173,19,.18) 78%,rgba(192,134,14,.08) 100%)!important;opacity:1!important;filter:blur(2px)}
 .nav-links a{display:inline-flex;align-items:center;margin:-4px -7px;padding:4px 7px;border-radius:6px;transition:none}
 .nav-links a:hover{background:#d8d8d1;color:#202522}
+.closing{background:#F4D950!important}
