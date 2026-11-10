@@ -402,3 +402,5 @@ html,body,#app{background:var(--paper);color:var(--ink);overflow-x:clip}body{fon
 .book-link{color:#565851}
 .book-link:hover{color:#3F2009}
 @media(max-width:680px){.book-card{box-shadow:none}}
+.hero .secondary-button{background:transparent!important;color:#fff!important;border:1px solid rgba(255,255,255,.62)!important}
+.hero .secondary-button:hover{background:rgba(255,255,255,.08)!important;color:#fff!important}
