@@ -361,3 +361,17 @@ html,body,#app{background:var(--paper);color:var(--ink);overflow-x:clip}body{fon
 .book-link:hover{color:#9A600E}
 @media(max-width:900px){.books .section-heading{grid-template-columns:1fr;gap:16px}.books .section-heading>p{max-width:720px}}
 @media(max-width:680px){.book-copy-break{display:none}.books .section-heading>p{font-size:17px;line-height:1.6}.book-card{box-shadow:0 4px #b7dfe1}}
+/* See for yourself: retain the selector layout and restore Childbook teal */
+.showcase{background:#2e9fa4}
+.showcase .section-heading .eyebrow,.showcase .section-heading h2,.showcase .section-heading>p{color:#fff}
+.showcase .section-heading>p{opacity:.9}
+.showcase .preview{background:#f8ffff;border:0;border-radius:22px;padding:28px}
+.showcase .theme-picker h3,.showcase .child-picker h3{color:#203b55}
+.showcase .theme-option{border-radius:10px;color:#203b55}
+.showcase .theme-option.selected{background:#dcf5f5;border-color:#2e9fa4}
+.showcase .child-option{color:#203b55}
+.showcase .child-option.selected{background:#dcf5f5;border-color:#2e9fa4}
+.showcase .sample-stage{border-radius:16px;background:#e4f3f4}
+.showcase .image-caption{background:linear-gradient(transparent,rgba(16,33,63,.78))}
+.showcase .preview-foot{padding-top:22px}
+@media(max-width:680px){.showcase .preview{padding:16px;border-radius:16px}}
