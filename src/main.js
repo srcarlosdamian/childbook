@@ -80,39 +80,42 @@ function design(){app.innerHTML=`<header class="ds-nav wrap"><a class="brand" hr
   --content-width: 1370px;
 }</code></pre></section></main><footer class="ds-footer wrap"><a class="brand" href="../">childbook</a><a href="README.md">Full design documentation</a><span>Atomic design · V1.3</span><a href="../">Return to Childbook</a></footer>`}
 
-const designColorSwatches = [
-  ['Paper 50', '#FDFBE9', '#202522'],
-  ['Paper 100', '#F5F5F2', '#202522'],
-  ['Paper 200', '#E8E8E5', '#202522'],
-  ['Paper 300', '#D8D8D1', '#202522'],
-  ['Paper 400', '#BDBFB7', '#202522'],
-  ['Paper 500', '#989A91', '#202522'],
-  ['Paper 600', '#77786F', '#FFFFFF'],
-  ['Paper 700', '#565851', '#FFFFFF'],
-  ['Paper 800', '#3F413C', '#FFFFFF'],
-  ['Paper 900', '#292B27', '#FFFFFF'],
-  ['Paper 950', '#191A19', '#FFFFFF'],
-  ['Yellow 50', '#FDFBE9', '#202522'],
-  ['Yellow 100', '#FBF6C6', '#202522'],
-  ['Yellow 200', '#F8EB90', '#202522'],
-  ['Yellow 300', '#F4D950', '#202522'],
-  ['Yellow 400', '#EFC522', '#202522'],
-  ['Yellow 500', '#DFAD13', '#202522'],
-  ['Yellow 600', '#C0860E', '#FFFFFF'],
-  ['Yellow 700', '#9A600E', '#FFFFFF'],
-  ['Yellow 800', '#7F4C14', '#FFFFFF'],
-  ['Yellow 900', '#6C3F17', '#FFFFFF'],
-  ['Yellow 950', '#3F2009', '#FFFFFF'],
-  ['Coral', '#F46D56', '#202522'],
-  ['Sage', '#B6C8A7', '#202522'],
-  ['Lilac', '#C7B9E8', '#202522'],
-  ['Teal accent', '#258F94', '#FFFFFF'],
-  ['Ocean ink', '#203B55', '#FFFFFF'],
-  ['Ocean muted', '#596F83', '#FFFFFF'],
-  ['Night sky', '#10213F', '#FFFFFF'],
+const designColorPalettes = [
+  {
+    name: 'Paper - neutral surfaces',
+    colors: [
+      ['Paper 50', '#FAF9F6', '#202522'],
+      ['Paper 100', '#F5F5F2', '#202522'],
+      ['Paper 200', '#E8E8E5', '#202522'],
+      ['Paper 300', '#D8D8D1', '#202522'],
+      ['Paper 400', '#BDBFB7', '#202522'],
+      ['Paper 500', '#989A91', '#202522'],
+      ['Paper 600', '#77786F', '#FFFFFF'],
+      ['Paper 700', '#565851', '#FFFFFF'],
+      ['Paper 800', '#3F413C', '#FFFFFF'],
+      ['Paper 900', '#292B27', '#FFFFFF'],
+      ['Paper 950', '#191A19', '#FFFFFF'],
+    ],
+  },
+  {
+    name: 'Yellow - primary actions',
+    colors: [
+      ['Yellow 50', '#FDFBE9', '#202522'],
+      ['Yellow 100', '#FBF6C6', '#202522'],
+      ['Yellow 200', '#F8EB90', '#202522'],
+      ['Yellow 300', '#F4D950', '#202522'],
+      ['Yellow 400', '#EFC522', '#202522'],
+      ['Yellow 500', '#DFAD13', '#202522'],
+      ['Yellow 600', '#C0860E', '#FFFFFF'],
+      ['Yellow 700', '#9A600E', '#FFFFFF'],
+      ['Yellow 800', '#7F4C14', '#FFFFFF'],
+      ['Yellow 900', '#6C3F17', '#FFFFFF'],
+      ['Yellow 950', '#3F2009', '#FFFFFF'],
+    ],
+  },
 ]
 const designColorTokenText = `:root {
-  --color-paper-50: #FDFBE9;
+  --color-paper-50: #FAF9F6;
   --color-paper-100: #F5F5F2;
   --color-paper-200: #E8E8E5;
   --color-paper-300: #D8D8D1;
@@ -134,23 +137,16 @@ const designColorTokenText = `:root {
   --color-yellow-800: #7F4C14;
   --color-yellow-900: #6C3F17;
   --color-yellow-950: #3F2009;
-  --color-coral: #F46D56;
-  --color-sage: #B6C8A7;
-  --color-lilac: #C7B9E8;
-  --color-teal-accent: #258F94;
-  --color-ocean-ink: #203B55;
-  --color-ocean-muted: #596F83;
-  --color-night-sky: #10213F;
 }`
 function renderDesignColorDocumentation(){
   const swatches=document.querySelector('.ds-swatches')
-  swatches.innerHTML=designColorSwatches.map(([name,color,textColor])=>`<span style="--swatch:${color};color:${textColor}">${name}<code>${color}</code></span>`).join('')
+  swatches.innerHTML=designColorPalettes.map(({name,colors})=>`<section class="ds-color-group"><h3>${name}</h3><div class="ds-color-swatches">${colors.map(([label,color,textColor])=>`<span style="--swatch:${color};color:${textColor}">${label}<code>${color}</code></span>`).join('')}</div></section>`).join('')
   document.querySelector('.ds-section pre code').textContent=designColorTokenText
-  document.querySelector('.ds-hero .eyebrow').textContent='CHILDBOOK / DESIGN SYSTEM / V1.4'
-  document.querySelector('.ds-footer span').textContent='Atomic design · V1.4'
+  document.querySelector('.ds-hero .eyebrow').textContent='CHILDBOOK / DESIGN SYSTEM / V1.5'
+  document.querySelector('.ds-footer span').textContent='Atomic design · V1.5'
   const colorNote=document.createElement('p')
   colorNote.className='ds-color-note'
-  colorNote.textContent='Yellow is the primary action color. Paper is the neutral background scale: use Paper 50–200 for surfaces, never blue or green backgrounds.'
+  colorNote.textContent='Yellow is reserved for primary actions. Use Paper 100 for section backgrounds, Paper 50 for lighter cards and previews, and Paper 200 for secondary surfaces. The palette contains only the Paper and Yellow scales.'
   swatches.before(colorNote)
 }
 

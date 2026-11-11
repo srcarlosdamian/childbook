@@ -1,6 +1,6 @@
 # Sistema de diseño Childbook
 
-**Versión:** 1.4
+**Versión:** 1.5
 **Actualizado:** 10 de noviembre de 2026  
 **Alcance:** sitio de marketing Childbook, muestra interactiva, galería de libros y sistema de precios.
 
@@ -16,13 +16,13 @@ El tamaño base de botones, navegación, cuerpo, listas, precios secundarios y f
 
 ## Sistema de color
 
-Childbook usa **Yellow** para acciones primarias y **Paper** para fondos. Paper es la base neutral cálida del sitio y de las tarjetas de libros; no se deben sustituir las superficies por fondos verdes o azules. Los tonos de color vivos se reservan para acciones, iconos y detalles.
+Childbook usa únicamente las escalas **Paper** y **Yellow**. Paper es la escala neutral de superficies; Yellow se reserva para las acciones primarias. Los fondos de sección usan Paper 100 y las tarjetas y previews usan Paper 50, más claro que el fondo.
 
 ### Escala Paper
 
 | Token | Valor | Uso |
 |---|---|---|
-| Paper 50 | `#FDFBE9` | Superficie crema de tarjetas |
+| Paper 50 | `#FAF9F6` | Tarjetas y previews, más claros que el fondo |
 | Paper 100 | `#F5F5F2` | Fondo general y secciones |
 | Paper 200 | `#E8E8E5` | Superficies secundarias e imágenes |
 | Paper 300 | `#D8D8D1` | Separadores y bordes suaves |
@@ -38,7 +38,7 @@ Childbook usa **Yellow** para acciones primarias y **Paper** para fondos. Paper 
 
 | Token | Valor | Uso |
 |---|---|---|
-| Yellow 50 | `#FDFBE9` | Matiz claro del CTA |
+| Yellow 50 | `#FDFBE9` | Tono más claro de la escala Yellow |
 | Yellow 100 | `#FBF6C6` | Fondo de degradado |
 | Yellow 200 | `#F8EB90` | Fondo de degradado |
 | Yellow 300 | `#F4D950` | Acento amarillo |
@@ -50,21 +50,7 @@ Childbook usa **Yellow** para acciones primarias y **Paper** para fondos. Paper 
 | Yellow 900 | `#6C3F17` | Tono profundo |
 | Yellow 950 | `#3F2009` | Tono más oscuro |
 
-### Colores de apoyo
-
-| Token | Valor | Uso |
-|---|---|---|
-| Ink / Story ink | `#191A19` / `#202522` | Texto principal y títulos |
-| Coral | `#F46D56` | Acento |
-| Sage | `#B6C8A7` | Acento de icono |
-| Lilac | `#C7B9E8` | Acento de icono |
-| Teal accent | `#258F94` | Iconos de lista y enlaces puntuales; no usar como fondo |
-| Ocean ink | `#203B55` | Texto del preview; no usar como fondo |
-| Ocean muted | `#596F83` | Texto secundario del preview; no usar como fondo |
-| Night sky | `#10213F` | Overlay sobre la fotografía del hero |
-| White | `#FFFFFF` | Texto sobre superficies oscuras o imágenes |
-
-**Regla de superficies:** el sitio usa Paper 100 como fondo base, Paper 50 para tarjetas y Paper 200 para superficies secundarias. Amarillo es el color primario de acción, no un sustituto de Paper para fondos de contenido. Evitar fondos azules y verdes. Se retiraron los fondos verdes `#EAF3F1` y `#E2EEEB` de la galería; usa Paper en su lugar. Los valores de las ilustraciones temporales no forman parte de la paleta de superficies.
+**Regla de superficies:** Paper 100 (`#F5F5F2`) se usa como fondo de secciones; Paper 50 (`#FAF9F6`) para tarjetas y previews más claros; Paper 200 (`#E8E8E5`) para superficies secundarias. Yellow queda reservado para las acciones primarias, no para los paneles de contenido. El hero conserva su fotografía con un overlay oscuro neutral; las fotografías temporales no forman parte de la paleta.
 
 El hero conserva su fotografía nocturna con overlay. El CTA de cierre usa la escala Yellow; los botones primarios usan Yellow 500 (`#DFAD13`) y texto blanco.
 
@@ -74,7 +60,7 @@ El hero conserva su fotografía nocturna con overlay. El CTA de cierre usa la es
 
 - **Botón primario**: fondo Yellow 500 (`#DFAD13`), texto blanco, 16 px semibold, altura mínima 48 px, esquinas redondeadas.
 - **Botón secundario**: fondo gris carbón (`#565851`), texto blanco, 16 px semibold, sin subrayado ni icono decorativo.
-- **Botón oscuro**: fondo Story ink, texto blanco; se usa en superficies claras cuando se requiere una acción principal de alto contraste.
+- **Botón oscuro**: fondo Paper 950, texto claro; se usa en superficies claras cuando se requiere una acción principal de alto contraste.
 - **Tipografía de control**: 16 px; enlaces de navegación también usan 16 px.
 - **Iconografía**: trazos estilo Lucide en SVG inline, `viewBox` 24 × 24, extremos redondos y trazo de 1.8–2 px.
 - **Circle check**: círculo y check de Lucide para listas de beneficios. Sustituye los checks de texto anteriores.
@@ -91,7 +77,7 @@ El hero conserva su fotografía nocturna con overlay. El CTA de cierre usa la es
 ### Organismos
 
 - **Header sticky**: wordmark compacto a la izquierda y navegación en un panel separado. Cada contenedor tiene fondo suave propio; la altura se ajusta al contenido. Los enlaces aparecen en dos columnas.
-- **Hero**: fondo fotográfico nocturno de ancho completo, overlay oscuro, etiqueta de plataforma sobre el titular, titular blanco, párrafo legible y dos CTA.
+- **Hero**: fondo fotográfico de ancho completo, overlay Paper oscuro neutral, etiqueta de plataforma sobre el titular, titular claro, párrafo legible y dos CTA.
 - **Muestra “See for yourself”**: selector de tema, imagen central y selector de perfil. Tema y perfil modifican la foto temporal.
 - **“What would you like to create?”**: tres tarjetas con elementos `<img>` reales y botones secundarios de 16 px.
 - **“From one idea to a complete book”**: cuatro filas con imágenes cuadradas temporales alineadas a la izquierda. Su CTA está debajo de los pasos.
