@@ -53,7 +53,7 @@ function landing(){app.innerHTML=`${nav()}<main>
 <section class="books section" id="books"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">REAL BOOKS, NOT ISOLATED IMAGES</span><h2>Made with Childbook</h2></div><p>Open a story and explore how an idea becomes a beautifully illustrated book, page by page.</p></div><div class="book-grid">${books.map((book)=>`<article class="book-card"><div class="book-image"><img src="${book.image}" alt="Temporary photo reference for ${book.title}" loading="lazy"/></div><div class="book-copy"><span class="book-category">${book.tag}</span><h3>${book.title}</h3><a class="book-link" href="#create">View the book</a></div></article>`).join('')}</div><div class="center"><a href="#create" class="button hero-button">Start Your Own Book</a></div></div></section>
 <section class="templates section" id="templates"><div class="wrap templates-grid"><div><span class="eyebrow">PERSONALIZED BOOKS</span><h2>Start from a finished story</h2><p>You do not need to begin with a blank page. Choose a ready-made adventure, personalize the character, and create the finished book in minutes.</p><div class="perks"><span>Ready-made adventures</span><span>Personalize in minutes</span></div><a href="#books" class="button secondary-button">Browse Book Templates</a></div><div class="template-art"><img class="template-photo" src="${placeholderPhotos.boy}" alt="Child reading a book, temporary photo reference" loading="lazy"/></div></div></section>
 <section class="section" id="pricing"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">SIMPLE, FLEXIBLE PRICING</span><h2>Choose the pace that fits<br/>your stories</h2></div><p>Create complete illustrated books with the same core tools on every plan. Move up when you need more books, more illustrations, or commercial production.</p></div><div class="billing"><button class="active" data-period="monthly">Monthly</button><button data-period="yearly">Yearly <span>2 months off</span></button></div><div class="plans"><article><small>FOR YOUR OWN LITTLE LIBRARY</small><h3>Hobby Plan</h3><p>For personal projects, short stories, and a steady stream of new ideas.</p><div class="price"><b data-monthly="$19" data-yearly="$15">$19</b> / month</div><small class="billing-note">Billed monthly · Cancel anytime. No refund for the current period.</small><ul><li>${circleCheck}<span>Up to 20 books each month</span></li><li>${circleCheck}<span>100 illustration credits each month</span></li><li>${circleCheck}<span>Up to 32 pages per book</span></li><li>${circleCheck}<span>50% rollover credits</span></li><li>${circleCheck}<span>Access to Childbook Illustrator</span></li></ul><a class="button secondary-button" href="#create">Choose Hobby</a></article><article class="featured"><div class="featured-kicker"><small>MORE ROOM TO IMAGINE</small><label>POPULAR</label></div><h3>Premium Plan</h3><p>For prolific creators who want more capacity—and a $20 credit toward a printed book each month.</p><div class="price"><b data-monthly="$29" data-yearly="$23">$29</b> / month</div><small class="billing-note">Billed monthly · Cancel anytime. No refund for the current period.</small><div class="credit"><b>$20 print credit each month</b><small>Apply it when you order any softcover you choose. Shipping is separate.</small></div><ul><li>${circleCheck}<span>Everything in Hobby</span></li><li>${circleCheck}<span>Up to 50 books each month</span></li><li>${circleCheck}<span>250 illustration credits each month</span></li><li>${circleCheck}<span>Up to 40 pages per book</span></li></ul><a class="button dark" href="#create">Choose Premium</a></article><article id="business"><small>FOR CREATIVE TEAMS</small><h3>Business Plan</h3><p>For professional authors, publishers, and teams producing books at scale.</p><div class="price"><b data-monthly="$99" data-yearly="$79">$99</b> / month</div><small class="billing-note">Billed monthly · Cancel anytime. No refund for the current period.</small><ul><li>${circleCheck}<span>Everything in Premium</span></li><li>${circleCheck}<span>200 book credits each month</span></li><li>${circleCheck}<span>1,000 illustration credits each month</span></li><li>${circleCheck}<span>Commercial license and no watermark</span></li><li>${circleCheck}<span>Priority generation queue</span></li></ul><a class="button secondary-button" href="#create">Choose Business</a></article></div><p class="terms">Prices are in USD. Automatically renews until cancelled. Cancel before renewal and retain access through the paid period. Applicable taxes are calculated at checkout. Printing and shipping are additional. <a href="#faq">Subscription terms</a> · <a href="#faq">Privacy Policy</a></p></div></section>
-<section class="audiences section" id="audiences"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">WHO USES CHILDBOOK?</span><h2>One platform, different<br/>ways to create</h2></div><p>A big imagination belongs in every home,<br/>classroom, and creative studio.</p></div><div class="audience-grid"><article><i>♡</i><small>01 / AT HOME</small><h3>Families</h3><p>Create a unique book for a child, celebration, or family memory.</p><a class="audience-link" href="#create">Explore families</a></article><article><i>✎</i><small>02 / MAKE A BOOK</small><h3>Authors and illustrators</h3><p>Turn a manuscript into an illustrated and professionally formatted book.</p><a class="audience-link" href="#create">Explore authors and illustrators</a></article><article><i>✦</i><small>03 / IN THE CLASSROOM</small><h3>Teachers</h3><p>Create personalized educational stories and classroom materials.</p><a class="audience-link" href="#create">Explore teachers</a></article><article><i>⌂</i><small>04 / LEARN TOGETHER</small><h3>Homeschooling families</h3><p>Make learning stories around a child’s interests and the topics you explore together.</p><a class="audience-link" href="#create">Explore homeschooling families</a></article></div></div></section>
+<section class="audiences section" id="audiences"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">WHO USES CHILDBOOK?</span><h2>One platform, different<br/>ways to create</h2></div><p>A big imagination belongs in every home,<br/>classroom, and creative studio.</p></div><div class="audience-grid"><article><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78Z"/></svg></i><small>01 / AT HOME</small><h3>Families</h3><p>Create a unique book for a child, celebration, or family memory.</p><a class="audience-link" href="#create">Explore families</a></article><article><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L8 18l-4 1 1-4Z"/></svg></i><small>02 / MAKE A BOOK</small><h3>Authors and illustrators</h3><p>Turn a manuscript into an illustrated and professionally formatted book.</p><a class="audience-link" href="#create">Explore authors and illustrators</a></article><article><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 1.9 5.8a2 2 0 0 0 1.3 1.3L21 12l-5.8 1.9a2 2 0 0 0-1.3 1.3L12 21l-1.9-5.8a2 2 0 0 0-1.3-1.3L3 12l5.8-1.9a2 2 0 0 0 1.3-1.3L12 3Z"/><path d="M5 3v4"/><path d="M3 5h4"/></svg></i><small>03 / IN THE CLASSROOM</small><h3>Teachers</h3><p>Create personalized educational stories and classroom materials.</p><a class="audience-link" href="#create">Explore teachers</a></article><article><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7"/><path d="M5 9v12h14V9"/><path d="M9 21v-8h6v8"/></svg></i><small>04 / LEARN TOGETHER</small><h3>Homeschooling families</h3><p>Make learning stories around a child’s interests and the topics you explore together.</p><a class="audience-link" href="#create">Explore homeschooling families</a></article></div></div></section>
 <section class="faq section" id="faq"><div class="wrap faq-grid"><div><span class="eyebrow">HERE TO HELP</span><h2>Frequently asked<br/>questions</h2><p>Everything you need to know before the first page.</p><a class="button secondary-button faq-contact" href="mailto:hello@childbook.ai">Still curious? Get in touch</a></div><div class="faq-list"><details open><summary>What is an AI children’s-book generator?<i>＋</i></summary><p>Childbook turns an idea or existing story into a complete children’s book with text, illustrations, characters, and page layouts.</p></details><details><summary>Can I create a character from a photo?<i>＋</i></summary><p>Yes. You can use a photo to create a personalized character and include that character throughout the book.</p></details><details><summary>Will the character look consistent on every page?<i>＋</i></summary><p>Childbook is designed to maintain recognizable characters and a consistent visual style across the complete book.</p></details><details><summary>Can I illustrate a story I have already written?<i>＋</i></summary><p>Yes. The Illustrator workflow lets you add your own text and create matching illustrations for every page.</p></details><details><summary>Can I download or print my book?<i>＋</i></summary><p>You can edit and download the finished book as a digital file. Printed-book options are also available.</p></details><details><summary>Can I sell books created with Childbook?<i>＋</i></summary><p>Commercial creators and businesses can use Childbook’s professional production workflows, reusable templates, white-label output, and business licensing.</p></details><details><summary>Is there an API for automated production?<i>＋</i></summary><p>Business subscribers can use the Illustration API with their illustration credits, within the limits shown on the developer page. The Partner API, webhooks, bulk or CSV processing, and Shopify or other storefront integrations need a separate written agreement with our team.</p></details></div></div></section>
 <section class="closing"><div class="wrap"><span class="eyebrow">YOUR NEXT GREAT STORY STARTS HERE</span><h2>Make them the<br/><em>main character.</em></h2><p>Create a story they’ll ask you to read again and again.</p><a href="#create" class="button dark">Start creating</a></div></section></main>${footer()}`;
  document.querySelector('.menu-toggle').onclick=()=>document.querySelector('.nav-panel').classList.toggle('nav-open');let activeTheme=0,activeChild=0;const paintPreview=()=>{const child=demoChildren[activeChild],theme=demoThemes[activeTheme],image=document.querySelector('#preview-image');image.src=demoPreviewImages[activeTheme][activeChild];image.alt=`Temporary reference photo for ${child.name} in a ${theme.name} story`;document.querySelector('#preview-caption').textContent=`${child.name} · ${theme.name}`;document.querySelectorAll('[data-theme]').forEach((b,i)=>{b.classList.toggle('selected',i===activeTheme);b.setAttribute('aria-pressed',String(i===activeTheme))});document.querySelectorAll('[data-child]').forEach((b,i)=>{b.classList.toggle('selected',i===activeChild);b.setAttribute('aria-pressed',String(i===activeChild))})};document.querySelectorAll('[data-theme]').forEach(b=>b.onclick=()=>{activeTheme=Number(b.dataset.theme);paintPreview()});document.querySelectorAll('[data-child]').forEach(b=>b.onclick=()=>{activeChild=Number(b.dataset.child);paintPreview()});document.querySelectorAll('[data-period]').forEach(btn=>btn.onclick=()=>{document.querySelectorAll('[data-period]').forEach(b=>b.classList.toggle('active',b===btn));document.querySelectorAll('.price b').forEach(p=>p.textContent=p.dataset[btn.dataset.period]);document.querySelectorAll('.billing-note').forEach(n=>n.textContent=btn.dataset.period==='yearly'?'Billed annually · Cancel anytime. No refund for the current period.':'Billed monthly · Cancel anytime. No refund for the current period.')})}
@@ -80,4 +80,78 @@ function design(){app.innerHTML=`<header class="ds-nav wrap"><a class="brand" hr
   --content-width: 1370px;
 }</code></pre></section></main><footer class="ds-footer wrap"><a class="brand" href="../">childbook</a><a href="README.md">Full design documentation</a><span>Atomic design · V1.3</span><a href="../">Return to Childbook</a></footer>`}
 
-isDesign?design():landing()
+const designColorSwatches = [
+  ['Paper 50', '#FDFBE9', '#202522'],
+  ['Paper 100', '#F5F5F2', '#202522'],
+  ['Paper 200', '#E8E8E5', '#202522'],
+  ['Paper 300', '#D8D8D1', '#202522'],
+  ['Paper 400', '#BDBFB7', '#202522'],
+  ['Paper 500', '#989A91', '#202522'],
+  ['Paper 600', '#77786F', '#FFFFFF'],
+  ['Paper 700', '#565851', '#FFFFFF'],
+  ['Paper 800', '#3F413C', '#FFFFFF'],
+  ['Paper 900', '#292B27', '#FFFFFF'],
+  ['Paper 950', '#191A19', '#FFFFFF'],
+  ['Yellow 50', '#FDFBE9', '#202522'],
+  ['Yellow 100', '#FBF6C6', '#202522'],
+  ['Yellow 200', '#F8EB90', '#202522'],
+  ['Yellow 300', '#F4D950', '#202522'],
+  ['Yellow 400', '#EFC522', '#202522'],
+  ['Yellow 500', '#DFAD13', '#202522'],
+  ['Yellow 600', '#C0860E', '#FFFFFF'],
+  ['Yellow 700', '#9A600E', '#FFFFFF'],
+  ['Yellow 800', '#7F4C14', '#FFFFFF'],
+  ['Yellow 900', '#6C3F17', '#FFFFFF'],
+  ['Yellow 950', '#3F2009', '#FFFFFF'],
+  ['Coral', '#F46D56', '#202522'],
+  ['Sage', '#B6C8A7', '#202522'],
+  ['Lilac', '#C7B9E8', '#202522'],
+  ['Teal accent', '#258F94', '#FFFFFF'],
+  ['Ocean ink', '#203B55', '#FFFFFF'],
+  ['Ocean muted', '#596F83', '#FFFFFF'],
+  ['Night sky', '#10213F', '#FFFFFF'],
+]
+const designColorTokenText = `:root {
+  --color-paper-50: #FDFBE9;
+  --color-paper-100: #F5F5F2;
+  --color-paper-200: #E8E8E5;
+  --color-paper-300: #D8D8D1;
+  --color-paper-400: #BDBFB7;
+  --color-paper-500: #989A91;
+  --color-paper-600: #77786F;
+  --color-paper-700: #565851;
+  --color-paper-800: #3F413C;
+  --color-paper-900: #292B27;
+  --color-paper-950: #191A19;
+  --color-yellow-50: #FDFBE9;
+  --color-yellow-100: #FBF6C6;
+  --color-yellow-200: #F8EB90;
+  --color-yellow-300: #F4D950;
+  --color-yellow-400: #EFC522;
+  --color-yellow-500: #DFAD13;
+  --color-yellow-600: #C0860E;
+  --color-yellow-700: #9A600E;
+  --color-yellow-800: #7F4C14;
+  --color-yellow-900: #6C3F17;
+  --color-yellow-950: #3F2009;
+  --color-coral: #F46D56;
+  --color-sage: #B6C8A7;
+  --color-lilac: #C7B9E8;
+  --color-teal-accent: #258F94;
+  --color-ocean-ink: #203B55;
+  --color-ocean-muted: #596F83;
+  --color-night-sky: #10213F;
+}`
+function renderDesignColorDocumentation(){
+  const swatches=document.querySelector('.ds-swatches')
+  swatches.innerHTML=designColorSwatches.map(([name,color,textColor])=>`<span style="--swatch:${color};color:${textColor}">${name}<code>${color}</code></span>`).join('')
+  document.querySelector('.ds-section pre code').textContent=designColorTokenText
+  document.querySelector('.ds-hero .eyebrow').textContent='CHILDBOOK / DESIGN SYSTEM / V1.4'
+  document.querySelector('.ds-footer span').textContent='Atomic design · V1.4'
+  const colorNote=document.createElement('p')
+  colorNote.className='ds-color-note'
+  colorNote.textContent='Yellow is the primary action color. Paper is the neutral background scale: use Paper 50–200 for surfaces, never blue or green backgrounds.'
+  swatches.before(colorNote)
+}
+
+if(isDesign){design();renderDesignColorDocumentation()}else landing()
