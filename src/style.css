@@ -404,3 +404,38 @@ html,body,#app{background:var(--paper);color:var(--ink);overflow-x:clip}body{fon
 @media(max-width:680px){.book-card{box-shadow:none}}
 .hero .secondary-button{background:transparent!important;color:#fff!important;border:1px solid rgba(255,255,255,.62)!important}
 .hero .secondary-button:hover{background:rgba(255,255,255,.08)!important;color:#fff!important}
+.hero-bottom span{display:inline-flex;align-items:center;gap:8px}
+.hero-bottom span:before{content:none}
+.hero-bottom svg{width:20px;height:20px;flex:none;color:#ffd96a}
+.theme-option{min-height:58px;justify-content:flex-start;padding:6px 9px;gap:12px}
+.theme-option img{width:44px;height:44px;flex:none;border-radius:50%;object-fit:cover}
+.child-option{justify-content:flex-start}
+.create-grid article{display:flex;flex-direction:column}
+.create-grid .card-copy{display:flex;flex:1;flex-direction:column;align-items:flex-start}
+.create-grid .card-copy p{flex:1}
+.create-grid .card-link{min-height:0;margin-top:auto;padding:0;background:transparent!important;color:#257e86!important;border:0!important;text-decoration:none!important}
+.create-grid .card-link:hover{background:transparent!important;color:#202b27!important;text-decoration:none!important}
+#steps .steps article,#steps .steps article+article{grid-template-columns:72px minmax(0,1fr);gap:20px}
+#steps .step-image{width:72px;height:72px;display:block;object-fit:cover;border-radius:8px}
+.books{background:#eaf3f1!important;color:#202522}
+.books .section-heading>p{max-width:460px;line-height:1.5;text-wrap:pretty}
+.book-card{background:#e2eeeb!important}
+.book-image{background:#d7e7e2!important}
+#pricing .plans article,#pricing .plans article+article,#pricing .plans article.featured{border:0!important;box-shadow:none!important}
+#pricing .plans h3{font-size:30px}
+#pricing .featured-kicker{display:flex;align-items:center;justify-content:flex-start;gap:12px;margin:0 0 4px}
+#pricing .featured-kicker small{font-size:16px;line-height:1.45;color:#f5f5f2}
+#pricing .featured-kicker label{position:static!important;display:inline-flex;align-items:center;min-height:32px;padding:4px 10px;border-radius:4px;background:#f46d56;color:#fff;font-size:12px;line-height:1.2}
+.faq-contact{margin-top:12px;text-decoration:none!important}
+.closing{background:#f4d950!important;background-image:none!important}
+.closing:before,.closing:after{content:none!important;display:none!important;background:none!important}
+.closing .eyebrow,.closing h2,.closing h2 em,.closing p{color:#191a19!important}
+.showcase .theme-option:hover,.showcase .child-option:hover{border-color:transparent}
+.showcase .theme-option.selected,.showcase .child-option.selected{background:#e8eee4;border-color:transparent}
+.showcase .theme-option:focus,.showcase .child-option:focus{outline:none}
+.showcase .theme-option:focus-visible,.showcase .child-option:focus-visible{outline:2px solid #efc522;outline-offset:2px}
+@media(max-width:680px){
+  #steps .steps article,#steps .steps article+article{grid-template-columns:60px minmax(0,1fr);gap:14px}
+  #steps .step-image{width:60px;height:60px}
+  #pricing .featured-kicker{flex-wrap:wrap}
+}
